@@ -124,21 +124,6 @@ export default async function Home() {
           </section>
         </Container>
       </div>
-      <Container>
-        <section>
-          <Title title="Cual es tu sistema de camaras de seguridad ideal?" />
-        </section>
-      </Container>
-      <Container>
-        <section>
-          <Title title="Marcas de camaras de vigilancia" />
-        </section>
-      </Container>
-      <Container>
-        <section>
-          <Title title="Tipos de camaras de seguridad" />
-        </section>
-      </Container>
     </main>
   );
 }

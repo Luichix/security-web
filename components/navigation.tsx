@@ -42,18 +42,18 @@ const Navigation: React.FC = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-4">
-          <a href="#" className="text-white hover:text-gray-300">
-            Modelos
-          </a>
-          <a href="#" className="text-white hover:text-gray-300">
-            Marcas
-          </a>
+        <div className="hidden md:flex space-x-4 md:space-x-8 ">
           <a href="#" className="text-white hover:text-gray-300">
             Guías
           </a>
           <a href="#" className="text-white hover:text-gray-300">
             Reseñas
+          </a>
+          <a href="#" className="text-white hover:text-gray-300">
+            Modelos
+          </a>
+          <a href="#" className="text-white hover:text-gray-300">
+            Marcas
           </a>
           <a href="#" className="text-white hover:text-gray-300">
             Contacto
@@ -65,16 +65,16 @@ const Navigation: React.FC = () => {
       <div className={`${isMobileMenuOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-8 py-6  border-t-2 border-white space-y-1 flex flex-col gap-4 ">
           <a href="#" className="text-white block hover:text-gray-300">
-            Modelos
-          </a>
-          <a href="#" className="text-white block hover:text-gray-300">
-            Marcas
-          </a>
-          <a href="#" className="text-white block hover:text-gray-300">
             Guías
           </a>
           <a href="#" className="text-white block hover:text-gray-300">
             Reseñas
+          </a>
+          <a href="#" className="text-white block hover:text-gray-300">
+            Modelos
+          </a>
+          <a href="#" className="text-white block hover:text-gray-300">
+            Marcas
           </a>
           <a href="#" className="text-white block hover:text-gray-300">
             Contacto
