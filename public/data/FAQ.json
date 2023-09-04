@@ -1,0 +1,42 @@
+[
+  {
+    "pregunta": "¿Por qué necesito una cámara de seguridad en mi hogar o negocio?",
+    "respuesta": "Las cámaras de seguridad son esenciales para salvaguardar lo que más valoras. No solo disuaden a intrusos, sino que también proporcionan evidencia crucial en caso de incidentes. Descubre cómo pueden brindarte tranquilidad y protección en nuestra",
+    "enlace": {
+      "entrada_textual": "entrada de blog sobre la importancia de las cámaras de seguridad.",
+      "referencia": "/blog"
+    }
+  },
+  {
+    "pregunta": "¿Cuáles son las ventajas de las cámaras de seguridad inalámbricas?",
+    "respuesta": "Las cámaras inalámbricas son una opción inteligente debido a su instalación sencilla, flexibilidad de ubicación y eliminación de cables molestos. Explora las ventajas clave de estas cámaras en nuestra",
+    "enlace": {
+      "entrada_textual": "entrada de blog sobre cámaras de seguridad inalámbricas.",
+      "referencia": "/blog"
+    }
+  },
+  {
+    "pregunta": "¿Qué características debo buscar en una cámara de seguridad para exteriores?",
+    "respuesta": "Elegir la cámara adecuada para exteriores es crucial. Busca resistencia a la intemperie, visión nocturna y más. Profundiza en estas características en nuestra",
+    "enlace": {
+      "entrada_textual": "entrada de blog sobre cámaras de seguridad para exteriores.",
+      "referencia": "/blog"
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre cámaras de seguridad con resolución HD y 4K?",
+    "respuesta": "La calidad de imagen es una consideración clave. Las cámaras 4K ofrecen imágenes más nítidas que las HD. Descubre cómo estas diferencias pueden afectar tu seguridad en nuestra",
+    "enlace": {
+      "entrada_textual": "entrada de blog sobre resolución de cámaras de seguridad.",
+      "referencia": "/blog"
+    }
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre cámaras de seguridad IP y analógicas?",
+    "respuesta": "Comprender las diferencias entre cámaras IP y analógicas es esencial al elegir tu sistema de seguridad. Las cámaras IP utilizan Internet para transmitir, mientras que las analógicas no lo hacen. Descubre cuál es la mejor opción para ti en nuestra",
+    "enlace": {
+      "entrada_textual": "entrada de blog sobre cámaras IP vs. cámaras analógicas.",
+      "referencia": "/blog"
+    }
+  }
+]

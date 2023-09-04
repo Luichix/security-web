@@ -5,6 +5,8 @@ import Image from 'next/image';
 // import Intro from '@/components/intro';
 // import Post from '@/interfaces/post';
 // import { fetchAllPosts } from '@/lib';
+import FAQ from '@/public/data/FAQ.json';
+import Link from 'next/link';
 
 export default async function Home() {
   // const allPosts: Post[] = await fetchAllPosts();
@@ -124,6 +126,27 @@ export default async function Home() {
           </section>
         </Container>
       </div>
+      <Container>
+        <section className="py-20">
+          <Title title="Resuelve algunas dudas frecuentes" />
+          {FAQ.map(({ pregunta, respuesta, enlace }, index) => (
+            <div key={index} className="md:px-8  py-4">
+              <h3 className="text-lg leading-8 pb-2 font-medium tracking-wide">
+                {pregunta}
+              </h3>
+              <p className="text-md  leading-8 font-light">
+                {respuesta}&nbsp;
+                <Link
+                  className="text-sky-800 font-medium"
+                  href={enlace.referencia}
+                >
+                  {enlace.entrada_textual}
+                </Link>
+              </p>
+            </div>
+          ))}
+        </section>
+      </Container>
     </main>
   );
 }
