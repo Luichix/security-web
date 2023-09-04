@@ -1,8 +1,12 @@
-import markdownToHtml from "@/lib/markdownToHtml";
-import { getPostBySlug } from "@/lib";
+import markdownToHtml from '@/lib/markdownToHtml';
+import { getPostBySlug } from '@/lib';
 
-export async function GET(request: Request,  { params }: { params: { slug: string } }) {
+// Route
 
+export async function GET(
+  request: Request,
+  { params }: { params: { slug: string } }
+) {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
@@ -11,15 +15,14 @@ export async function GET(request: Request,  { params }: { params: { slug: strin
     'content',
     'ogImage',
     'coverImage',
-  ])
+  ]);
 
-  
-  const content = await markdownToHtml(post.content || '')
-  
-  return new Response(JSON.stringify( {
-    ...post,
-    content,
-  }));
+  const content = await markdownToHtml(post.content || '');
 
-
+  return new Response(
+    JSON.stringify({
+      ...post,
+      content,
+    })
+  );
 }
