@@ -1,3 +1,4 @@
+import PostType from '@/interfaces/post';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { join } from 'path';
@@ -62,7 +63,6 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
       items[field] = data[field];
     }
   });
-
   return items;
 }
 
@@ -72,5 +72,6 @@ export function getAllPosts(fields: string[] = []) {
     .map((slug) => getPostBySlug(slug, fields))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+
   return posts;
 }

@@ -1,9 +1,9 @@
-import PostPreview from './post-preview'
-import type Post from '../interfaces/post'
+import PostPreview from './post-preview';
+import type Post from '../interfaces/post';
 
 type Props = {
-  posts: Post[]
-}
+  posts: any;
+};
 
 const MoreStories = ({ posts }: Props) => {
   return (
@@ -12,7 +12,7 @@ const MoreStories = ({ posts }: Props) => {
         More Stories
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-        {posts.map((post) => (
+        {posts.map((post: any) => (
           <PostPreview
             key={post.slug}
             title={post.title}
@@ -25,7 +25,7 @@ const MoreStories = ({ posts }: Props) => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default MoreStories
+export default MoreStories;

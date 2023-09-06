@@ -2,11 +2,18 @@ import Container from '@/components/container';
 import MoreStories from '@/components/more-stories';
 import HeroPost from '@/components/hero-post';
 import Intro from '@/components/intro';
-import Post from '@/interfaces/post';
-import { fetchAllPosts } from '@/lib';
+// import Post from '@/interfaces/post';
+import { getAllPosts } from '@/lib';
 
 export default async function Home() {
-  const allPosts: Post[] = await fetchAllPosts();
+  const allPosts = getAllPosts([
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
+  ]);
 
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
